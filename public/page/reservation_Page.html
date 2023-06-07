@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약</title>
+    <link rel="stylesheet" type="text/css" href="reservation_Page.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <div class="reservation_Page">
+        <p>예약하기</p>
+        <table class="reservation">
+            <tr>
+                <td>예약자명</td>
+                <td>
+                    <input type="text" placeholder="성함을 입력해주세요">
+                </td>
+            </tr>
+            <tr>
+                <td>예약자 연락처</td>
+                <td>
+                    <input type="text" placeholder="연락처를 입력해주세요">
+                </td>
+            </tr>
+            <tr>
+                <td>투숙일자</td>
+                <td>
+                    <div class="datepicker-toggle">
+                        <input type="text" placeholder="날짜를 선택하세요">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>퇴실일자</td>
+                <td>
+                    <div class="datepicker-toggle2">
+                        <input type="text" placeholder="날짜를 선택하세요">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>금액</td>
+                <td>50,000</td>
+            </tr>
+        </table>
+    </div>
+    <button class="reservationBtn">예약</button>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="reservation_Page.js"></script>
+</body>
+
+</html>

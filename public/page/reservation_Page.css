@@ -1,0 +1,50 @@
+.reservation_Page>p {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+.reservation {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation th {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.reservation td {
+    padding: 10px 10px;
+}
+
+.ui-datepicker {
+    display: none;
+    font-size: 14px;
+}
+
+.ui-datepicker-header {
+    text-align: center;
+}
+
+.ui-datepicker-calendar td a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+.ui-datepicker-calendar td a.ui-state-hover {
+    background-color: #ddd;
+}
+
+.ui-datepicker-calendar td a.ui-state-active {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+.reservationBtn {
+    position: relative;
+    left: 61%;
+    background-color: #fff;
+    border-radius: 20%;
+}

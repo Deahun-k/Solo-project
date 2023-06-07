@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <p></p>
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:3000/api",
+            data: { area: "달서구" }
+        })
+            .done(function (msg) {
+                console.log(msg);
+                if (msg && msg.data && msg.data.length > 0) {
+                    $("p").append(msg.data[0].address);
+                } else {
+                    $("p").append("데이터가 없습니다.");
+                }
+            })
+            .fail(function () {
+                $("p").append("데이터를 불러오는 중 오류가 발생했습니다.");
+                /*
+                var address = msg.data[0]['address'];
+                $("p").text(address);
+                */
+            });
+    </script>
+</body>
+
+</html>
